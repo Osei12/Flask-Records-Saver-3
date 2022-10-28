@@ -10,9 +10,9 @@ import io
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///records.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///records.db'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:dev123@localhost/highdb'
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://qfsfvbphyhsric:f6fea13cc4fa374803557d838a84043eaeddf2fabb1d957ca2c46cb2c9257ca3@ec2-52-70-45-163.compute-1.amazonaws.com:5432/d1ib009kvn4e4i'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://qfsfvbphyhsric:f6fea13cc4fa374803557d838a84043eaeddf2fabb1d957ca2c46cb2c9257ca3@ec2-52-70-45-163.compute-1.amazonaws.com:5432/d1ib009kvn4e4i'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'SJKHSHGYGTFER562768'
 
